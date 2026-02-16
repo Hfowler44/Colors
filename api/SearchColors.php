@@ -1,3 +1,4 @@
+//Search the users colors
 <?php
 
 	$inData = getRequestInfo();

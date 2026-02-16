@@ -1,4 +1,4 @@
-
+//User authentication 
 <?php
 
 	$inData = getRequestInfo();

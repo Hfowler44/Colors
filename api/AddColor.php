@@ -1,3 +1,4 @@
+//adds a new color for the user
 <?php
 	$inData = getRequestInfo();
 	
