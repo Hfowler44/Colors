@@ -1,0 +1,24 @@
+@startuml
+left to right direction
+
+actor User
+
+rectangle "Colors Web Application" {
+
+    (Login) as L
+    (Search Colors) as S
+    (Add Color) as A
+    (Logout) as O
+
+    
+    L -[hidden]-> S
+    L -[hidden]-> A
+    L -[hidden]-> O
+}
+
+User --> L
+
+S ..> L : <<include>>
+A ..> L : <<include>>
+O ..> L : <<include>>
+@enduml
