@@ -1,0 +1,16 @@
+@startuml
+start
+:Login;
+
+:Choose Action;
+
+fork
+  :Search Colors;
+fork again
+  :Add Color;
+fork again
+  :Logout;
+end fork
+
+stop
+@enduml
