@@ -113,12 +113,13 @@ function addColor()
 	let newColor = document.getElementById("colorText").value;
 	document.getElementById("colorAddResult").innerHTML = "";
 
-	let tmp = {color:newColor,userId,userId};
+	let tmp = {color:newColor,userId: userId};
 	let jsonPayload = JSON.stringify( tmp );
 
 	let url = urlBase + '/AddColor.' + extension;
 	
 	let xhr = new XMLHttpRequest();
+
 	xhr.open("POST", url, true);
 	xhr.setRequestHeader("Content-type", "application/json; charset=UTF-8");
 	try
